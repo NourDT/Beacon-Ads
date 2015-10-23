@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=yes,
+		initial-scale=1.0" />
+
+	<title>iBeacons Ads</title>
+
+	<style>
+	@import 'page.css';
+	</style>
+
+	<script>
+	// Redirect console if running from Evothings Workbench.
+	if (window.hyper) { console.log = hyper.log }
+	</script>
+</head>
+
+<body>
+	<div class="my-page" id="page-default">
+		<div class="my-header">
+			<img class="my-header-image" src="photos/photo-default.jpg" />
+			<img class="my-icon-back" src="icon-back.png" ontouchend="history.back()" />
+		</div>
+		<div class="my-content">
+			<h1>iBeacons Ads</h1>
+			<p>Please move within range of the iBeacons.</p>
+		</div>
+	</div>
+<!--AD1-->
+	<div class="my-page" id="ad1">
+		<div class="my-header">
+			<img class="my-header-image" src="photos/ad1.jpg" />
+			<img class="my-icon-back" src="icon-back.png" ontouchend="history.back()" />
+		</div>
+		<div class="my-content">
+			<h1>Connected to Beacon 1</h1>
+			<ul>
+				<li>This page may contain any info.</li>
+				
+			</ul>
+		</div>
+	</div>
+<!--AD2-->
+	<div class="my-page" id="ad2">
+		<div class="my-header">
+			<img class="my-header-image" src="photos/ad2.jpg" />
+			<img class="my-icon-back" src="icon-back.png" ontouchend="history.back()" />
+		</div>
+		<div class="my-content">
+			<h1>Connected to Beacon 2</h1>
+			<ul>
+				<li>This page may contain any info.</li>
+				
+			</ul>
+		</div>
+	</div>
+
+	<div class="my-page" id="ad3">
+		<div class="my-header">
+			<img class="my-header-image" src="photos/ad3.jpg" />
+			<img class="my-icon-back" src="icon-back.png" ontouchend="history.back()" />
+		</div>
+		<div class="my-content">
+			<h1>Connected to Beacon 3</h1>
+			<ul>
+				<li>more info ?</li>
+				
+			</ul>
+		</div>
+	</div>
+
+	<script src="lib/jquery.js"></script>
+	<script src="cordova.js"></script>
+	<script src="app.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+
+</body>
+</html>
